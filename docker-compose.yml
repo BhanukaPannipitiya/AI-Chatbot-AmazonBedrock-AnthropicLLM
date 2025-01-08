@@ -1,0 +1,10 @@
+version: '3.8'
+
+services:
+  app:
+    build: .
+    container_name: fastapi-app
+    ports:
+      - "8000:8000"  # Map host port 8000 to container port 8000
+    volumes:
+      - .:/app  # Mount the current directory to /app in the container

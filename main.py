@@ -8,7 +8,6 @@ import boto3
 import os
 
 # Initialize AWS Bedrock client
-# Make sure AWS credentials are provided via environment variables or mounted .aws/credentials
 try:
     bedrock_client = boto3.client(
         service_name='bedrock-runtime',
